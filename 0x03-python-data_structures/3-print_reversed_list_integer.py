@@ -1,11 +1,5 @@
 #!/usr/bin/python3
-
-
-def print_reversed_list_integer(mylist):
-    n = len(mylist)
-    for i in range(1, n+1):
-        print("{:d}".format(mylist[n-i]))
-
-
-if __name__ == "__main__":
-    exit()
+def print_reversed_list_integer(my_list=[]):
+    if my_list is not None:
+        for i in my_list[::-1]:
+            print("{:d}".format(i))
